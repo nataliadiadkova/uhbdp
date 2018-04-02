@@ -289,6 +289,17 @@
             max-width: 31.333333%;
             margin: 10px;
             @include box-shadow(4px, 4px, 8px, rgba(0, 0, 0, 0.2));
+            transition: 0.3s linear;
+
+            &:hover {
+                transform: scale(1.02);
+                // box-shadow: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+            }
 
             &__picture-wrapper {
                 height: 365px;
@@ -354,6 +365,8 @@
 }
 
 .testimonials-slide {
+    max-width: 660px;
+    margin: 0 auto;
 
     .center {
 
@@ -389,17 +402,16 @@
             }
         }
 
-        .slick-slide.slick-center  {
-            opacity: 1;
-            transform: scale(1.2);
+        .slick-prev:before, .slick-next:before {
+            color: $light-color;
         }
 
         .slick-slide {
-            opacity: 0.6;
+            // opacity: 0.6;
 
             .block-desc {
                 background-color: $white-color;
-                padding: 0 15px 40px 15px;
+                padding: 0px 80px 40px 80px;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
                 margin: 0 15px;
@@ -421,8 +433,8 @@
             }
 
             .img {
-                width: 180px;
-                height: 180px;
+                width: 203px;
+                height: 203px;
                 margin: 0 auto;
                 margin-top: 50px;
 
@@ -517,24 +529,32 @@
         .form-inline {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
 
             input {
                 width: 29%;
                 margin: 20px 10px;
                 font-size: 18px;
                 padding: 10px;
+
+                &:nth-of-type(4) {
+                    width: 45%;
+                }
+
+                &:nth-of-type(5) {
+                    width: 45%;
+                }
             }
 
             textarea {
-                width: 96%;
+                width: 100%;
                 font-size: 18px;
                 padding: 10px;
-
+                margin: 0 10px;
             }
 
             .btn {
-                margin-top: 38px;
+                margin: 40px auto;
                 font-size: 14px;
                 color: $white-color;
                 font-family: $roboto-font-family;
