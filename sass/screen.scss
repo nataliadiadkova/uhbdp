@@ -1,0 +1,552 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import 'const';
+@import 'mixins';
+@import 'fonts';
+
+@include font-face("Roboto", "Roboto/Roboto-Regular", 400);
+@include font-face("Roboto", "Roboto/Roboto-Bold", 600);
+@include font-face("Roboto_Slab", "Roboto_Slab/RobotoSlab-Bold", 700);
+@include font-face("Roboto_Slab", "Roboto_Slab/RobotoSlab-Regular", 400);
+@include font-face("UniSansThinCAPS", "UniSansThinCAPS/UniSansThinCAPS", 400);
+
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.authorization {
+    background-color: $grey-color;
+    height: 32px;
+}
+
+.authoriz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+
+    .social-icons {
+        max-height: 15px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            max-height: 15px;
+        }
+    }
+
+    .enter {
+        display: flex;
+        align-items: center;
+        width: 140px;
+        justify-content: space-between;
+
+        p {
+            display: inline-block;
+            font-size: 18px;
+            color: $dark-green-color;
+            font-family: $roboto-font-family;
+            font-weight: $roboto-font-weight;
+        }
+    }
+}
+
+.top-section {
+    @include background('main-bg.png', cover);
+
+    header {
+        display: flex;
+        .logo {
+            padding-top: 14px;
+            flex-basis: 20%;
+            max-width: 20%;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-basis: 40%;
+            max-width: 40%;
+            padding: 20px 10px 0 10px;
+            li {
+                padding-bottom: 5px;
+                a {
+                    color: $text-color;
+                    font-size: 18px;
+                    text-decoration: none;
+                    padding-bottom: 10px;
+                    transition: 0.3s linear;
+                    font-family: $roboto-font-family;
+                    font-weight: $roboto-font-weight;
+
+                    &:hover {
+                        border-bottom: 3px solid $dark-green-color;
+                    }
+                }
+            }
+        }
+
+        .contacts {
+            display: flex;
+            flex-basis: 40%;
+            max-width: 40%;
+            flex-direction: column;
+            padding-top: 14px;
+            align-items: flex-end;
+            font-family: $roboto-font-family;
+            font-weight: $roboto-font-weight-bold;
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                li {
+                    margin-left: 30px;
+                }
+            }
+
+            h6 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                text-align: right;
+                font-weight: $roboto-font-weight;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+        color: $text-dark-green;
+
+        h3 {
+            font-size: 36px;
+            font-family: $Roboto-Slab-font-family;
+            font-weight: $Roboto-Slab-font-weight-bold;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: $Roboto-Slab-font-family;
+            font-weight: $Roboto-Slab-font-weight-bold;
+            text-transform: uppercase;
+            margin-bottom: 34px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-family: $UniSansThinCAPS-font-family;
+            font-weight: $UniSansThinCAPS-font-weight-bold;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            position: relative;
+
+            &::after {
+                content: " ";
+                position: absolute;
+                width: 90%;
+                left: 5%;
+                bottom: 0;
+                height: 1px;
+                background-color: $text-dark-green;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 615px;
+            font-family: $roboto-font-family;
+            font-weight: $roboto-font-weight;
+            margin-bottom: 40px;
+
+            li {
+                font-size: 24px;
+                position: relative;
+
+                &::after {
+                    content: ".";
+                    position: absolute;
+                    right: -20%;
+                    top: -34px;
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+    .banner {
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.filters {
+    background-color: $bg-color;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        .title {
+            font-family: $Roboto-Slab-font-family;
+            font-weight: $Roboto-Slab-font-weight-bold;
+            text-transform: uppercase;
+            font-size: 36px;
+            color: $dark-green-color;
+            margin-top: 94px;
+            line-height: 1.4;
+            margin-bottom: 40px;
+        }
+
+        .articles-wrapper {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: flex-start;
+
+            .active {
+                background-color: $white-color;
+                @include box-shadow(3px, 3px, 3px, rgba(0, 0, 0, 0.3));
+                width: 100%;
+                height: 100%;
+            }
+
+            .article {
+                flex-basis: 16.666666%;
+                max-width: 16.666666%;
+                padding: 30px;
+
+                &:hover {
+                    background-color: $white-color;
+                    @include box-shadow(3px, 3px, 3px, rgba(0, 0, 0, 0.3));
+                    width: 100%;
+                    height: 100%;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $dark-text-color;
+                }
+
+                &__title {
+                    font-size: 24px;
+                    font-family: $roboto-font-family;
+                    font-weight: $roboto-font-weight;
+                }
+
+                &__picture-wrapper {
+                    height: 120px;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.articles {
+    background-color: $bg-color;
+    padding-top: 90px;
+
+    .articles-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        flex-wrap: wrap;
+
+        .article {
+            flex-basis: 31.333333%;
+            max-width: 31.333333%;
+            margin: 10px;
+            @include box-shadow(4px, 4px, 8px, rgba(0, 0, 0, 0.2));
+
+            &__picture-wrapper {
+                height: 365px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__title {
+                height: 130px;
+                background: $white-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-family: $roboto-font-family;
+                    font-weight: $roboto-font-weight;
+                }
+            }
+        }
+
+        .more {
+            margin-top: 60px;
+
+            a {
+                font-size: 30px;
+                font-family: $roboto-font-family;
+                font-weight: $roboto-font-weight;
+                color: $link-color;
+            }
+        }
+    }
+}
+
+.testimonials {
+    background-color: $bg-color;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        .title {
+
+            h1 {
+                font-family: $Roboto-Slab-font-family;
+                font-weight: $Roboto-Slab-font-weight-bold;
+                text-transform: uppercase;
+                font-size: 36px;
+                color: $dark-green-color;
+                margin-top: 90px;
+                line-height: 1.4;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+.testimonials-slide {
+
+    .center {
+
+        .title {
+            margin-bottom: 42px;
+            margin-top: 34px;
+
+            h2 {
+                font-family: $Roboto-Slab-font-family;
+                font-weight: $Roboto-Slab-font-weight;
+                font-size: 30px;
+                display: inline-block;
+                position: relative;
+
+                &::after {
+                    content: " ";
+                    position: absolute;
+                    width: 90%;
+                    bottom: -17px;
+                    left: 5%;
+                    height: 2px;
+                    background-color: $light-color;
+                }
+            }
+        }
+
+        .description {
+            p {
+                font-family: $roboto-font-family;
+                font-weight: $roboto-font-weight;
+                font-size: 16px;
+                line-height: 1.3;
+            }
+        }
+
+        .slick-slide.slick-center  {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        .slick-slide {
+            opacity: 0.6;
+
+            .block-desc {
+                background-color: $white-color;
+                padding: 0 15px 40px 15px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                margin: 0 15px;
+                position: relative;
+                margin-bottom: 70px;
+
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    top: -130px;
+                    left: 0;
+                    background-color: $white-color;
+                    z-index: -1;
+                }
+            }
+
+            .img {
+                width: 180px;
+                height: 180px;
+                margin: 0 auto;
+                margin-top: 50px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .slick-dots {
+            li {
+                button {
+                    &::before {
+                        color: #c6c6c6;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            li {
+                button {
+
+                    &:hover {
+                        &::before {
+                            opacity: 1;
+                            color: #07a219;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            li.slick-active {
+                button {
+
+                    &:hover {
+                        &::before {
+                            opacity: 1;
+                            color: #07a219;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact-form {
+    @include background('contact-bg.png', cover, 50% 0);
+    background-color: $bg-color;
+    padding-bottom: 300px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+
+            h1 {
+                font-family: $Roboto-Slab-font-family;
+                font-weight: $Roboto-Slab-font-weight-bold;
+                text-transform: uppercase;
+                font-size: 36px;
+                color: $dark-green-color;
+                margin-top: 90px;
+                line-height: 1.4;
+                margin-bottom: 40px;
+            }
+        }
+
+        .description {
+            max-width: 738px;
+            margin-bottom: 40px;
+
+            p {
+                font-family: $roboto-font-family;
+                font-weight: $roboto-font-weight;
+                font-size: 24px;
+                text-align: center;
+                line-height: 1.3;
+            }
+        }
+
+        .form-inline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            input {
+                width: 29%;
+                margin: 20px 10px;
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            textarea {
+                width: 96%;
+                font-size: 18px;
+                padding: 10px;
+
+            }
+
+            .btn {
+                margin-top: 38px;
+                font-size: 14px;
+                color: $white-color;
+                font-family: $roboto-font-family;
+                font-weight: $roboto-font-weight-bold;
+                width: 170px;
+                height: 46px;
+                border-radius: 20px;
+                background-color: $btn-color;
+                text-transform: uppercase;
+                border: none;
+                @include box-shadow(3px, 3px, 3px, rgba(0, 0, 0, 0.3));
+            }
+        }
+    }
+}

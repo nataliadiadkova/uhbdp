@@ -1,0 +1,14 @@
+@mixin background($imgpath,$size,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url('../img/' +$imgpath);
+        size: $size;
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+}
