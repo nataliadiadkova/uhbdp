@@ -226,7 +226,10 @@
             display: flex;
             width: 100%;
             justify-content: center;
-            align-items: flex-start;
+            align-items: stretch;
+            flex-wrap: wrap;
+            height: 215px;
+        
 
             .active {
                 background-color: $white-color;
@@ -236,9 +239,11 @@
             }
 
             .article {
-                flex-basis: 16.666666%;
-                max-width: 16.666666%;
-                padding: 30px;
+                flex-basis: 12%;
+                max-width: 12%;
+                padding: 25px;
+                height: 210px;
+                display: flex;
 
                 &:hover {
                     background-color: $white-color;
@@ -253,7 +258,7 @@
                 }
 
                 &__title {
-                    font-size: 24px;
+                    font-size: 20px;
                     font-family: $roboto-font-family;
                     font-weight: $roboto-font-weight;
                 }
@@ -285,8 +290,8 @@
         flex-wrap: wrap;
 
         .article {
-            flex-basis: 31.333333%;
-            max-width: 31.333333%;
+            flex-basis: 22.333333%;
+            max-width: 22.333333%;
             margin: 10px;
             @include box-shadow(4px, 4px, 8px, rgba(0, 0, 0, 0.2));
             transition: 0.3s linear;
@@ -302,7 +307,7 @@
             }
 
             &__picture-wrapper {
-                height: 365px;
+                height: 290px;
 
                 img {
                     width: 100%;
@@ -328,6 +333,7 @@
 
         .more {
             margin-top: 60px;
+            width: 100%;
 
             a {
                 font-size: 30px;
@@ -498,6 +504,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        max-width: 900px;
 
         .title {
 
@@ -532,7 +539,7 @@
             justify-content: space-between;
 
             input {
-                width: 29%;
+                width: 28%;
                 margin: 20px 10px;
                 font-size: 18px;
                 padding: 10px;
