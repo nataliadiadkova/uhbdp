@@ -34,9 +34,10 @@
 
     .social-icons {
         max-height: 15px;
-        width: 100px;
+        max-width: 100px;
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         img {
             max-height: 15px;
@@ -46,8 +47,9 @@
     .enter {
         display: flex;
         align-items: center;
-        width: 140px;
+        max-width: 200px;
         justify-content: space-between;
+        width: 100%;
 
         p {
             display: inline-block;
@@ -55,6 +57,11 @@
             color: $dark-green-color;
             font-family: $roboto-font-family;
             font-weight: $roboto-font-weight;
+        }
+
+        select {
+            background-color: $grey-color;
+            border: none;
         }
     }
 }
@@ -228,8 +235,6 @@
             justify-content: center;
             align-items: stretch;
             flex-wrap: wrap;
-            height: 215px;
-        
 
             .active {
                 background-color: $white-color;
@@ -294,11 +299,11 @@
             max-width: 22.333333%;
             margin: 10px;
             @include box-shadow(4px, 4px, 8px, rgba(0, 0, 0, 0.2));
-            transition: 0.3s linear;
+            transition: 0.5s linear;
 
             &:hover {
-                transform: scale(1.02);
-                // box-shadow: none;
+                transform: scale(1.04);
+                box-shadow: none;
             }
 
             a {
@@ -324,7 +329,7 @@
 
                 h1 {
                     text-transform: uppercase;
-                    font-size: 24px;
+                    font-size: 20px;
                     font-family: $roboto-font-family;
                     font-weight: $roboto-font-weight;
                 }
@@ -336,7 +341,7 @@
             width: 100%;
 
             a {
-                font-size: 30px;
+                font-size: 24px;
                 font-family: $roboto-font-family;
                 font-weight: $roboto-font-weight;
                 color: $link-color;
@@ -373,6 +378,7 @@
 .testimonials-slide {
     max-width: 660px;
     margin: 0 auto;
+    width: 100%;
 
     .center {
 
@@ -490,6 +496,14 @@
                     }
                 }
             }
+        }
+
+        .slick-prev, .slick-next {
+            top: 62%;
+        }
+
+        .slick-prev:before, .slick-next:before {
+            font-size: 25px;
         }
     }
 }

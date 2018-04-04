@@ -26,10 +26,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .authorization { background-color: #e7eced; height: 32px; }
 
 .authoriz { display: flex; justify-content: space-between; align-items: center; height: 32px; }
-.authoriz .social-icons { max-height: 15px; width: 100px; display: flex; justify-content: space-between; }
+.authoriz .social-icons { max-height: 15px; max-width: 100px; display: flex; justify-content: space-between; width: 100%; }
 .authoriz .social-icons img { max-height: 15px; }
-.authoriz .enter { display: flex; align-items: center; width: 140px; justify-content: space-between; }
+.authoriz .enter { display: flex; align-items: center; max-width: 200px; justify-content: space-between; width: 100%; }
 .authoriz .enter p { display: inline-block; font-size: 18px; color: #016726; font-family: "Roboto"; font-weight: 400; }
+.authoriz .enter select { background-color: #e7eced; border: none; }
 
 .top-section { background-image: url("../img/main-bg.png"); background-size: cover; background-position: 0 0; background-repeat: no-repeat; }
 .top-section header { display: flex; }
@@ -57,7 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .filters { background-color: #f5fdeb; }
 .filters .container { display: flex; justify-content: center; text-align: center; flex-direction: column; }
 .filters .container .title { font-family: "Roboto_Slab"; font-weight: 700; text-transform: uppercase; font-size: 36px; color: #016726; margin-top: 94px; line-height: 1.4; margin-bottom: 40px; }
-.filters .container .articles-wrapper { display: flex; width: 100%; justify-content: center; align-items: stretch; flex-wrap: wrap; height: 215px; }
+.filters .container .articles-wrapper { display: flex; width: 100%; justify-content: center; align-items: stretch; flex-wrap: wrap; }
 .filters .container .articles-wrapper .active { background-color: #ffffff; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; width: 100%; height: 100%; }
 .filters .container .articles-wrapper .article { flex-basis: 12%; max-width: 12%; padding: 25px; height: 210px; display: flex; }
 .filters .container .articles-wrapper .article:hover { background-color: #ffffff; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; width: 100%; height: 100%; }
@@ -68,21 +69,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .articles { background-color: #f5fdeb; padding-top: 90px; }
 .articles .articles-wrapper { display: flex; width: 100%; justify-content: center; align-items: flex-start; text-align: center; flex-wrap: wrap; }
-.articles .articles-wrapper .article { flex-basis: 22.333333%; max-width: 22.333333%; margin: 10px; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; transition: 0.3s linear; }
-.articles .articles-wrapper .article:hover { transform: scale(1.02); }
+.articles .articles-wrapper .article { flex-basis: 22.333333%; max-width: 22.333333%; margin: 10px; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; transition: 0.5s linear; }
+.articles .articles-wrapper .article:hover { transform: scale(1.04); box-shadow: none; }
 .articles .articles-wrapper .article a { text-decoration: none; color: #282828; }
 .articles .articles-wrapper .article__picture-wrapper { height: 290px; }
 .articles .articles-wrapper .article__picture-wrapper img { width: 100%; height: 100%; }
 .articles .articles-wrapper .article__title { height: 130px; background: #ffffff; display: flex; align-items: center; justify-content: center; }
-.articles .articles-wrapper .article__title h1 { text-transform: uppercase; font-size: 24px; font-family: "Roboto"; font-weight: 400; }
+.articles .articles-wrapper .article__title h1 { text-transform: uppercase; font-size: 20px; font-family: "Roboto"; font-weight: 400; }
 .articles .articles-wrapper .more { margin-top: 60px; width: 100%; }
-.articles .articles-wrapper .more a { font-size: 30px; font-family: "Roboto"; font-weight: 400; color: #4e4e4e; }
+.articles .articles-wrapper .more a { font-size: 24px; font-family: "Roboto"; font-weight: 400; color: #4e4e4e; }
 
 .testimonials { background-color: #f5fdeb; }
 .testimonials .container { display: flex; justify-content: center; text-align: center; flex-direction: column; }
 .testimonials .container .title h1 { font-family: "Roboto_Slab"; font-weight: 700; text-transform: uppercase; font-size: 36px; color: #016726; margin-top: 90px; line-height: 1.4; margin-bottom: 40px; }
 
-.testimonials-slide { max-width: 660px; margin: 0 auto; }
+.testimonials-slide { max-width: 660px; margin: 0 auto; width: 100%; }
 .testimonials-slide .center .title { margin-bottom: 42px; margin-top: 34px; }
 .testimonials-slide .center .title h2 { font-family: "Roboto_Slab"; font-weight: 400; font-size: 30px; display: inline-block; position: relative; }
 .testimonials-slide .center .title h2::after { content: " "; position: absolute; width: 90%; bottom: -17px; left: 5%; height: 2px; background-color: #dddddd; }
@@ -95,6 +96,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .testimonials-slide .center .slick-dots li button::before { color: #c6c6c6; font-size: 10px; }
 .testimonials-slide .center .slick-dots li button:hover::before { opacity: 1; color: #07a219; font-size: 15px; }
 .testimonials-slide .center .slick-dots li.slick-active button:hover::before { opacity: 1; color: #07a219; font-size: 15px; }
+.testimonials-slide .center .slick-prev, .testimonials-slide .center .slick-next { top: 62%; }
+.testimonials-slide .center .slick-prev:before, .testimonials-slide .center .slick-next:before { font-size: 25px; }
 
 .contact-form { background-image: url("../img/contact-bg.png"); background-size: cover; background-position: 50% 0; background-repeat: no-repeat; background-color: #f5fdeb; padding-bottom: 300px; }
 .contact-form .container { display: flex; justify-content: center; align-items: center; flex-direction: column; max-width: 900px; }
