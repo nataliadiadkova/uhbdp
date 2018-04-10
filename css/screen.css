@@ -52,6 +52,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .top-section .title ul { display: flex; justify-content: space-between; width: 615px; font-family: "Roboto"; font-weight: 400; margin-bottom: 40px; }
 .top-section .title ul li { font-size: 24px; position: relative; }
 .top-section .title ul li::after { content: "."; position: absolute; right: -20%; top: -34px; font-size: 60px; }
+.top-section .title ul li:nth-of-type(3)::after { content: ""; }
 .top-section .banner { display: flex; }
 .top-section .banner img { width: 100%; height: 100%; }
 
@@ -60,7 +61,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .filters .container .title { font-family: "Roboto_Slab"; font-weight: 700; text-transform: uppercase; font-size: 36px; color: #016726; margin-top: 94px; line-height: 1.4; margin-bottom: 40px; }
 .filters .container .articles-wrapper { display: flex; width: 100%; justify-content: center; align-items: stretch; flex-wrap: wrap; }
 .filters .container .articles-wrapper .active { background-color: #ffffff; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; width: 100%; height: 100%; }
-.filters .container .articles-wrapper .article { flex-basis: 12%; max-width: 12%; padding: 25px; height: 210px; display: flex; }
+.filters .container .articles-wrapper .article { flex-basis: 12%; max-width: 12%; padding: 25px; height: 210px; display: flex; transition: 0.3s linear; }
 .filters .container .articles-wrapper .article:hover { background-color: #ffffff; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; width: 100%; height: 100%; }
 .filters .container .articles-wrapper .article a { text-decoration: none; color: #191919; }
 .filters .container .articles-wrapper .article__title { font-size: 20px; font-family: "Roboto"; font-weight: 400; }
@@ -70,12 +71,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .articles { background-color: #f5fdeb; padding-top: 90px; }
 .articles .articles-wrapper { display: flex; width: 100%; justify-content: center; align-items: flex-start; text-align: center; flex-wrap: wrap; }
 .articles .articles-wrapper .article { flex-basis: 22.333333%; max-width: 22.333333%; margin: 10px; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; transition: 0.5s linear; }
-.articles .articles-wrapper .article:hover { transform: scale(1.04); box-shadow: none; }
+.articles .articles-wrapper .article:hover { transform: scale(1.04); box-shadow: none; border: 1px solid #dddddd; }
 .articles .articles-wrapper .article a { text-decoration: none; color: #282828; }
 .articles .articles-wrapper .article__picture-wrapper { height: 290px; }
 .articles .articles-wrapper .article__picture-wrapper img { width: 100%; height: 100%; }
-.articles .articles-wrapper .article__title { height: 130px; background: #ffffff; display: flex; align-items: center; justify-content: center; }
-.articles .articles-wrapper .article__title h1 { text-transform: uppercase; font-size: 20px; font-family: "Roboto"; font-weight: 400; }
+.articles .articles-wrapper .article__title { height: 110px; background: #ffffff; display: flex; align-items: center; justify-content: center; }
+.articles .articles-wrapper .article__title h1 { text-transform: uppercase; font-size: 17px; font-family: "Roboto"; font-weight: 400; }
 .articles .articles-wrapper .more { margin-top: 60px; width: 100%; }
 .articles .articles-wrapper .more a { font-size: 24px; font-family: "Roboto"; font-weight: 400; color: #4e4e4e; }
 
@@ -90,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .testimonials-slide .center .description p { font-family: "Roboto"; font-weight: 400; font-size: 16px; line-height: 1.3; }
 .testimonials-slide .center .slick-prev:before, .testimonials-slide .center .slick-next:before { color: #dddddd; }
 .testimonials-slide .center .slick-slide .block-desc { background-color: #ffffff; padding: 0px 80px 40px 80px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; margin: 0 15px; position: relative; margin-bottom: 70px; }
-.testimonials-slide .center .slick-slide .block-desc::before { content: " "; position: absolute; height: 100%; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px; top: -130px; left: 0; background-color: #ffffff; z-index: -1; }
+.testimonials-slide .center .slick-slide .block-desc::before { content: " "; position: absolute; height: 140px; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px; top: -130px; left: 0; background-color: #ffffff; z-index: -1; }
 .testimonials-slide .center .slick-slide .img { width: 203px; height: 203px; margin: 0 auto; margin-top: 50px; }
 .testimonials-slide .center .slick-slide .img img { width: 100%; height: 100%; }
 .testimonials-slide .center .slick-dots li button::before { color: #c6c6c6; font-size: 10px; }
@@ -99,7 +100,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .testimonials-slide .center .slick-prev, .testimonials-slide .center .slick-next { top: 62%; }
 .testimonials-slide .center .slick-prev:before, .testimonials-slide .center .slick-next:before { font-size: 25px; }
 
-.contact-form { background-image: url("../img/contact-bg.png"); background-size: cover; background-position: 50% 0; background-repeat: no-repeat; background-color: #f5fdeb; padding-bottom: 300px; }
+.contact-form { background-image: url("../img/contact-bg.png"); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-color: #f5fdeb; padding-bottom: 200px; }
 .contact-form .container { display: flex; justify-content: center; align-items: center; flex-direction: column; max-width: 900px; }
 .contact-form .container .title h1 { font-family: "Roboto_Slab"; font-weight: 700; text-transform: uppercase; font-size: 36px; color: #016726; margin-top: 90px; line-height: 1.4; margin-bottom: 40px; }
 .contact-form .container .description { max-width: 738px; margin-bottom: 40px; }
@@ -109,4 +110,69 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .contact-form .container .form-inline input:nth-of-type(4) { width: 45%; }
 .contact-form .container .form-inline input:nth-of-type(5) { width: 45%; }
 .contact-form .container .form-inline textarea { width: 100%; font-size: 18px; padding: 10px; margin: 0 10px; }
-.contact-form .container .form-inline .btn { margin: 40px auto; font-size: 14px; color: #ffffff; font-family: "Roboto"; font-weight: 600; width: 170px; height: 46px; border-radius: 20px; background-color: #008731; text-transform: uppercase; border: none; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; }
+.contact-form .container .form-inline .btn { margin: 40px auto; font-size: 14px; color: #ffffff; font-family: "Roboto"; font-weight: 600; width: 170px; height: 46px; border-radius: 20px; background-color: #008731; text-transform: uppercase; border: none; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; transition: 0.3s linear; }
+.contact-form .container .form-inline .btn:hover { transform: scale(1.04); box-shadow: none; }
+
+.page-section header { display: flex; }
+.page-section header .uhbdp { max-width: 60%; flex-basis: 60%; display: flex; flex-wrap: wrap; }
+.page-section header .logo { padding-top: 14px; flex-basis: 30%; max-width: 30%; }
+.page-section header .title { flex-basis: 100%; max-width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: flex-start; padding-left: 26px; padding-top: 50px; }
+.page-section header .title span { margin-right: 20px; }
+.page-section header .title h1 { font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; color: #016726; line-height: 1.4; }
+.page-section header .nav { display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; flex-basis: 67%; max-width: 67%; padding: 20px 10px 0 10px; }
+.page-section header .nav li { padding-bottom: 5px; }
+.page-section header .nav li a { color: #282828; font-size: 18px; text-decoration: none; padding-bottom: 10px; transition: 0.3s linear; font-family: "Roboto"; font-weight: 400; }
+.page-section header .nav li a:hover { border-bottom: 3px solid #016726; }
+.page-section header .nav li .nav-active { border-bottom: 3px solid #016726; }
+.page-section header .contacts { display: flex; flex-basis: 40%; max-width: 40%; flex-direction: column; padding-top: 14px; align-items: flex-end; font-family: "Roboto"; font-weight: 600; }
+.page-section header .contacts ul { display: flex; justify-content: flex-end; }
+.page-section header .contacts ul li { margin-left: 30px; }
+.page-section header .contacts h6 { margin-bottom: 10px; }
+.page-section header .contacts p { text-align: right; font-weight: 400; font-size: 12px; }
+
+.technology-section { margin-top: 25px; }
+.technology-section .technology { display: flex; flex-direction: row; flex-wrap: wrap; }
+.technology-section .technology .description { flex-basis: 45%; max-width: 45%; font-family: "Roboto"; font-size: 18px; line-height: 1.3; padding-top: 27px; }
+.technology-section .technology .description p { text-indent: 1.5em; }
+.technology-section .technology .description ul { margin-top: 28px; margin-left: 34px; }
+.technology-section .technology .description ul li strong { font-weight: 600; }
+.technology-section .technology .description ul li span { margin-right: 20px; }
+.technology-section .technology .description ul li:nth-of-type(1) { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; color: #016726; line-height: 1.4; }
+.technology-section .technology .options { flex-basis: 55%; display: flex; max-width: 55%; flex-direction: column; }
+.technology-section .technology .options .views { width: 100%; display: flex; justify-content: space-between; flex-direction: row; font-family: "Roboto"; font-size: 16px; color: #4e4e4e; margin-bottom: 7px; }
+.technology-section .technology .options .views ul { display: flex; flex-direction: row; }
+.technology-section .technology .options .views ul li { margin-right: 10px; }
+.technology-section .technology .options .views ul li:nth-of-type(2) { margin-right: 25px; }
+.technology-section .technology .options .img { width: 100%; max-height: 447px; height: 100%; }
+.technology-section .technology .options .img img { width: 100%; height: 100%; }
+.technology-section .technology .options .likes { display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-top: 17px; }
+.technology-section .technology .options .likes .like { display: flex; align-items: center; }
+.technology-section .technology .options .likes .like span { background-image: url("../img/empty-heart.png"); background-size: auto; background-position: 0 0; background-repeat: no-repeat; width: 28px; height: 28px; transition: 0.2s linear; margin-right: 23px; }
+.technology-section .technology .options .likes .like span:hover { background-image: url("../img/full-heart.png"); background-size: auto; background-position: 0 0; background-repeat: no-repeat; }
+.technology-section .technology .options .likes .like p { font-family: "Roboto"; font-weight: 400; font-size: 18px; }
+.technology-section .technology .options .likes .partner .btn { font-size: 14px; color: #ffffff; font-family: "Roboto"; font-weight: 600; width: 220px; height: 46px; border-radius: 20px; background-color: #008731; text-transform: uppercase; border: none; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; display: flex; text-decoration: none; align-items: center; justify-content: center; transition: 0.3s linear; }
+.technology-section .technology .options .likes .partner .btn:hover { transform: scale(1.04); box-shadow: none; }
+
+.farmers { font-family: "Roboto_Slab"; font-weight: 700; color: #016726; margin-top: 90px; line-height: 1.4; margin-bottom: 0; }
+.farmers .container { display: flex; justify-content: center; text-align: center; flex-direction: column; }
+.farmers .container .title h1 { font-size: 24px; }
+.farmers .container .count { font-size: 200px; letter-spacing: 5px; }
+
+.questionary { margin-top: 30px; }
+.questionary .container { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; align-items: center; }
+.questionary .container .help-us { flex-basis: 45%; max-width: 45%; }
+.questionary .container .help-us .title { font-family: "Roboto_Slab"; font-weight: 700; color: #016726; display: flex; font-size: 24px; align-items: center; margin-bottom: 18px; }
+.questionary .container .help-us .title span { margin-right: 18px; }
+.questionary .container .help-us .desc { margin-left: 57px; }
+.questionary .container .help-us .desc p { font-family: "Roboto"; font-weight: 400; font-size: 18px; line-height: 1.4; margin-bottom: 22px; }
+.questionary .container .help-us .desc .buttons { display: flex; justify-content: space-between; align-items: center; }
+.questionary .container .help-us .desc .buttons a { text-decoration: none; color: #016726; }
+.questionary .container .help-us .desc .buttons .yes { font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; }
+.questionary .container .help-us .desc .buttons .next { font-family: "Roboto"; font-weight: 600; font-size: 14px; text-transform: uppercase; width: 170px; height: 46px; border-radius: 20px; border: 1px solid #016726; display: flex; align-items: center; justify-content: center; }
+.questionary .container .img { flex-basis: 50%; max-width: 50%; }
+
+.also { background-color: #ffffff; padding-top: 30px; }
+.also .container { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+.also .container .title h1 { font-family: "Roboto_Slab"; font-weight: 700; text-transform: uppercase; font-size: 24px; color: #016726; margin-top: 90px; line-height: 1.4; margin-bottom: 40px; text-align: center; }
+
+.write { background-color: #ffffff; }
