@@ -125,7 +125,6 @@
 
             ul {
                 margin-top: 28px;
-                margin-left: 34px;
 
                 li {
                     strong {
@@ -133,7 +132,7 @@
                     }
 
                     span {
-                        margin-right: 20px;
+                        margin-right: 22px;
                     }
 
                     &:nth-of-type(1) {
@@ -146,6 +145,7 @@
                         font-size: 24px;
                         color: $dark-green-color;
                         line-height: 1.4;
+                        padding-left: 26px;
                     }
                 }
             }
@@ -243,7 +243,6 @@
                         transition: 0.3s linear;
 
                         &:hover {
-                            transform: scale(1.04);
                             box-shadow: none;
                         }
                     }
@@ -344,10 +343,16 @@
                         width: 170px;
                         height: 46px;
                         border-radius: 20px;
-                        border: 1px solid $dark-green-color;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        background-color: $light-color;
+                        transition: 0.3s linear;
+
+                        &:hover {
+                            background-color: $dark-green-color;
+                            color: $white-color;
+                        }
                     }
                 }
             }

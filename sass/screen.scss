@@ -309,9 +309,8 @@
             transition: 0.5s linear;
 
             &:hover {
-                transform: scale(1.04);
+                transform: scale(1.03);
                 box-shadow: none;
-                border: 1px solid $light-color;
             }
 
             a {
@@ -334,6 +333,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                border: 1px solid $light-color;
 
                 h1 {
                     text-transform: uppercase;

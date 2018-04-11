@@ -71,11 +71,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .articles { background-color: #f5fdeb; padding-top: 90px; }
 .articles .articles-wrapper { display: flex; width: 100%; justify-content: center; align-items: flex-start; text-align: center; flex-wrap: wrap; }
 .articles .articles-wrapper .article { flex-basis: 22.333333%; max-width: 22.333333%; margin: 10px; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ; transition: 0.5s linear; }
-.articles .articles-wrapper .article:hover { transform: scale(1.04); box-shadow: none; border: 1px solid #dddddd; }
+.articles .articles-wrapper .article:hover { transform: scale(1.03); box-shadow: none; }
 .articles .articles-wrapper .article a { text-decoration: none; color: #282828; }
 .articles .articles-wrapper .article__picture-wrapper { height: 290px; }
 .articles .articles-wrapper .article__picture-wrapper img { width: 100%; height: 100%; }
-.articles .articles-wrapper .article__title { height: 110px; background: #ffffff; display: flex; align-items: center; justify-content: center; }
+.articles .articles-wrapper .article__title { height: 110px; background: #ffffff; display: flex; align-items: center; justify-content: center; border: 1px solid #dddddd; }
 .articles .articles-wrapper .article__title h1 { text-transform: uppercase; font-size: 17px; font-family: "Roboto"; font-weight: 400; }
 .articles .articles-wrapper .more { margin-top: 60px; width: 100%; }
 .articles .articles-wrapper .more a { font-size: 24px; font-family: "Roboto"; font-weight: 400; color: #4e4e4e; }
@@ -134,10 +134,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .technology-section .technology { display: flex; flex-direction: row; flex-wrap: wrap; }
 .technology-section .technology .description { flex-basis: 45%; max-width: 45%; font-family: "Roboto"; font-size: 18px; line-height: 1.3; padding-top: 27px; }
 .technology-section .technology .description p { text-indent: 1.5em; }
-.technology-section .technology .description ul { margin-top: 28px; margin-left: 34px; }
+.technology-section .technology .description ul { margin-top: 28px; }
 .technology-section .technology .description ul li strong { font-weight: 600; }
-.technology-section .technology .description ul li span { margin-right: 20px; }
-.technology-section .technology .description ul li:nth-of-type(1) { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; color: #016726; line-height: 1.4; }
+.technology-section .technology .description ul li span { margin-right: 22px; }
+.technology-section .technology .description ul li:nth-of-type(1) { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; color: #016726; line-height: 1.4; padding-left: 26px; }
 .technology-section .technology .options { flex-basis: 55%; display: flex; max-width: 55%; flex-direction: column; }
 .technology-section .technology .options .views { width: 100%; display: flex; justify-content: space-between; flex-direction: row; font-family: "Roboto"; font-size: 16px; color: #4e4e4e; margin-bottom: 7px; }
 .technology-section .technology .options .views ul { display: flex; flex-direction: row; }
@@ -151,7 +151,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .technology-section .technology .options .likes .like span:hover { background-image: url("../img/full-heart.png"); background-size: auto; background-position: 0 0; background-repeat: no-repeat; }
 .technology-section .technology .options .likes .like p { font-family: "Roboto"; font-weight: 400; font-size: 18px; }
 .technology-section .technology .options .likes .partner .btn { font-size: 14px; color: #ffffff; font-family: "Roboto"; font-weight: 600; width: 220px; height: 46px; border-radius: 20px; background-color: #008731; text-transform: uppercase; border: none; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; display: flex; text-decoration: none; align-items: center; justify-content: center; transition: 0.3s linear; }
-.technology-section .technology .options .likes .partner .btn:hover { transform: scale(1.04); box-shadow: none; }
+.technology-section .technology .options .likes .partner .btn:hover { box-shadow: none; }
 
 .farmers { font-family: "Roboto_Slab"; font-weight: 700; color: #016726; margin-top: 90px; line-height: 1.4; margin-bottom: 0; }
 .farmers .container { display: flex; justify-content: center; text-align: center; flex-direction: column; }
@@ -168,7 +168,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .questionary .container .help-us .desc .buttons { display: flex; justify-content: space-between; align-items: center; }
 .questionary .container .help-us .desc .buttons a { text-decoration: none; color: #016726; }
 .questionary .container .help-us .desc .buttons .yes { font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; }
-.questionary .container .help-us .desc .buttons .next { font-family: "Roboto"; font-weight: 600; font-size: 14px; text-transform: uppercase; width: 170px; height: 46px; border-radius: 20px; border: 1px solid #016726; display: flex; align-items: center; justify-content: center; }
+.questionary .container .help-us .desc .buttons .next { font-family: "Roboto"; font-weight: 600; font-size: 14px; text-transform: uppercase; width: 170px; height: 46px; border-radius: 20px; display: flex; align-items: center; justify-content: center; background-color: #dddddd; transition: 0.3s linear; }
+.questionary .container .help-us .desc .buttons .next:hover { background-color: #016726; color: #ffffff; }
 .questionary .container .img { flex-basis: 50%; max-width: 50%; }
 
 .also { background-color: #ffffff; padding-top: 30px; }
