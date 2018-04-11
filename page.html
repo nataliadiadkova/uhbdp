@@ -70,9 +70,9 @@
                     <div class="views">
                         <ul>
                             <li><img src="img/eye.png" alt="eye"></li>
-                            <li><span>8</span> понравилось</li>
-                            <li><img src="img/heart.png" alt="heart"></li>
                             <li><span>17</span> просмотров</li>
+                            <li><img src="img/heart.png" alt="heart"></li>
+                            <li><span>8</span> понравилось</li>
                         </ul>
                         <div class="back">
                             <a href="#"> <img src="img/back-img.png" alt="back-img"> </a>
@@ -87,7 +87,7 @@
                             <p>Вподобати</p>
                         </div>
                         <div class="partner">
-                            <a href="#" class="btn btn-default">обрати партнeра</a>
+                            <a href="#" class="btn btn-default">E-VOUCHER</a>
                         </div>
                     </div>
                 </div>
@@ -103,11 +103,6 @@
             <div class="count">
                 <h1><span>147</span></h1>
             </div>
-        </div>
-    </section>
-
-    <section class="questionary">
-        <div class="container">
             <div class="help-us">
                 <div class="title">
                     <span><img src="img/questionary.png" alt="questionary"></span>
@@ -115,13 +110,24 @@
                 </div>
                 <div class="desc">
                     <p>1. Чи вважаєте Ви отриману інформацію корисною для Вас? </p>
-                    <div class="buttons">
-                        <a href="#" class="yes">Так</a>
-                        <a href="#" class="yes">Ні</a>
-                        <a href="#" class="next">Далі</a>
-                    </div>
+                    <form class="buttons">
+                        <div>
+                            <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+                            <label for="subscribeNews" class="yes">Так</label>
+                            <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+                            <label for="subscribeNews" class="yes">Ні</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="next">Далі</button>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="questionary">
+        <div class="container">
             <div class="img">
                 <img src="img/uhbdp.png" alt="uhbdp">
             </div>
@@ -189,13 +195,20 @@
             <div class="form-block">
                 <form class="form-inline">
                       <input type="text"  placeholder="Имя" required>
-                      <input type="text"  placeholder="Отчество" required>
                       <input type="text"  placeholder="Фамилия" required>
                       <input type="phone"  placeholder="Телефон" required>
                       <input type="email"  placeholder="E-mail" required>
                       <textarea class="form-control" rows="3" id="comment" placeholder="Комментарий" required></textarea>
                     <button type="submit" class="btn btn-default">Отправить</button>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="description">
+                <p>Український проект бізнес-розвитку плодоовочівництва (UHBDP) фінансується Міністерством міжнародних справ Канади, реалізується та співфінансується Менонітською Асоціацією Економічного Розвитку (MEDA). MEDA співпрацює з Ізраїльським агентством міжнародного співробітництва (MASHAV) та міжнародними сервісними компаніями з метою надання технічної підтримки</p>
             </div>
         </div>
     </section>

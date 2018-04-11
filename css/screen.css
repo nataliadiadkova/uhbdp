@@ -100,18 +100,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .testimonials-slide .center .slick-prev, .testimonials-slide .center .slick-next { top: 62%; }
 .testimonials-slide .center .slick-prev:before, .testimonials-slide .center .slick-next:before { font-size: 25px; }
 
-.contact-form { background-image: url("../img/contact-bg.png"); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-color: #f5fdeb; padding-bottom: 200px; }
+.contact-form { background-image: url("../img/contact-bg.png"); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-color: #f5fdeb; padding-bottom: 10px; }
 .contact-form .container { display: flex; justify-content: center; align-items: center; flex-direction: column; max-width: 900px; }
 .contact-form .container .title h1 { font-family: "Roboto_Slab"; font-weight: 700; text-transform: uppercase; font-size: 36px; color: #016726; margin-top: 90px; line-height: 1.4; margin-bottom: 40px; }
 .contact-form .container .description { max-width: 738px; margin-bottom: 40px; }
 .contact-form .container .description p { font-family: "Roboto"; font-weight: 400; font-size: 24px; text-align: center; line-height: 1.3; }
 .contact-form .container .form-inline { display: flex; flex-wrap: wrap; justify-content: space-between; }
-.contact-form .container .form-inline input { width: 28%; margin: 20px 10px; font-size: 18px; padding: 10px; }
-.contact-form .container .form-inline input:nth-of-type(4) { width: 45%; }
-.contact-form .container .form-inline input:nth-of-type(5) { width: 45%; }
+.contact-form .container .form-inline input { width: 45%; margin: 20px 10px; font-size: 18px; padding: 10px; }
 .contact-form .container .form-inline textarea { width: 100%; font-size: 18px; padding: 10px; margin: 0 10px; }
 .contact-form .container .form-inline .btn { margin: 40px auto; font-size: 14px; color: #ffffff; font-family: "Roboto"; font-weight: 600; width: 170px; height: 46px; border-radius: 20px; background-color: #008731; text-transform: uppercase; border: none; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; transition: 0.3s linear; }
 .contact-form .container .form-inline .btn:hover { transform: scale(1.04); box-shadow: none; }
+
+.footer { background-color: #016726; padding: 40px 0; }
+.footer .description { font-family: "Roboto"; font-weight: 400; font-size: 18px; color: #ffffff; max-width: 60%; line-height: 1.2; }
 
 .page-section header { display: flex; }
 .page-section header .uhbdp { max-width: 60%; flex-basis: 60%; display: flex; flex-wrap: wrap; }
@@ -131,18 +132,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .page-section header .contacts p { text-align: right; font-weight: 400; font-size: 12px; }
 
 .technology-section { margin-top: 25px; }
-.technology-section .technology { display: flex; flex-direction: row; flex-wrap: wrap; }
-.technology-section .technology .description { flex-basis: 45%; max-width: 45%; font-family: "Roboto"; font-size: 18px; line-height: 1.3; padding-top: 27px; }
+.technology-section .technology { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
+.technology-section .technology .description { flex-basis: 43%; max-width: 43%; font-family: "Roboto"; font-size: 18px; line-height: 1.3; padding-top: 27px; order: 1; }
 .technology-section .technology .description p { text-indent: 1.5em; }
 .technology-section .technology .description ul { margin-top: 28px; }
 .technology-section .technology .description ul li strong { font-weight: 600; }
 .technology-section .technology .description ul li span { margin-right: 22px; }
 .technology-section .technology .description ul li:nth-of-type(1) { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; color: #016726; line-height: 1.4; padding-left: 26px; }
 .technology-section .technology .options { flex-basis: 55%; display: flex; max-width: 55%; flex-direction: column; }
-.technology-section .technology .options .views { width: 100%; display: flex; justify-content: space-between; flex-direction: row; font-family: "Roboto"; font-size: 16px; color: #4e4e4e; margin-bottom: 7px; }
+.technology-section .technology .options .views { width: 100%; display: flex; justify-content: space-between; flex-direction: row; font-family: "Roboto"; font-size: 16px; color: #4e4e4e; margin-bottom: 7px; align-items: center; height: auto; }
 .technology-section .technology .options .views ul { display: flex; flex-direction: row; }
 .technology-section .technology .options .views ul li { margin-right: 10px; }
 .technology-section .technology .options .views ul li:nth-of-type(2) { margin-right: 25px; }
+.technology-section .technology .options .views .back { height: 100%; width: auto; }
+.technology-section .technology .options .views .back a { display: block; }
+.technology-section .technology .options .views .back a img { width: 100%; height: 100%; }
 .technology-section .technology .options .img { width: 100%; max-height: 447px; height: 100%; }
 .technology-section .technology .options .img img { width: 100%; height: 100%; }
 .technology-section .technology .options .likes { display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-top: 17px; }
@@ -154,23 +158,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .technology-section .technology .options .likes .partner .btn:hover { box-shadow: none; }
 
 .farmers { font-family: "Roboto_Slab"; font-weight: 700; color: #016726; margin-top: 90px; line-height: 1.4; margin-bottom: 0; }
-.farmers .container { display: flex; justify-content: center; text-align: center; flex-direction: column; }
+.farmers .container { display: flex; justify-content: center; text-align: center; flex-wrap: wrap; flex-direction: row; align-items: center; }
+.farmers .container .title { flex-basis: 100%; max-width: 100%; }
 .farmers .container .title h1 { font-size: 24px; }
-.farmers .container .count { font-size: 200px; letter-spacing: 5px; }
+.farmers .container .count { font-size: 200px; letter-spacing: 5px; flex-basis: 50%; max-width: 50%; }
+.farmers .container .help-us { flex-basis: 45%; max-width: 45%; flex-basis: 45%; max-width: 45%; }
+.farmers .container .help-us .title { font-family: "Roboto_Slab"; font-weight: 700; color: #016726; display: flex; font-size: 24px; align-items: center; margin-bottom: 18px; }
+.farmers .container .help-us .title span { margin-right: 18px; }
+.farmers .container .help-us .desc { margin-left: 57px; }
+.farmers .container .help-us .desc p { font-family: "Roboto"; font-weight: 400; font-size: 18px; line-height: 1.4; margin-bottom: 22px; }
+.farmers .container .help-us .desc .buttons { display: flex; justify-content: space-between; align-items: center; }
+.farmers .container .help-us .desc .buttons label { text-decoration: none; color: #016726; }
+.farmers .container .help-us .desc .buttons .yes { font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; }
+.farmers .container .help-us .desc .buttons .next { font-family: "Roboto"; font-weight: 600; font-size: 14px; text-transform: uppercase; width: 170px; height: 46px; border-radius: 20px; display: flex; align-items: center; justify-content: center; background-color: #dddddd; transition: 0.3s linear; border: none; }
+.farmers .container .help-us .desc .buttons .next:hover { background-color: #016726; color: #ffffff; }
 
 .questionary { margin-top: 30px; }
-.questionary .container { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; align-items: center; }
-.questionary .container .help-us { flex-basis: 45%; max-width: 45%; }
-.questionary .container .help-us .title { font-family: "Roboto_Slab"; font-weight: 700; color: #016726; display: flex; font-size: 24px; align-items: center; margin-bottom: 18px; }
-.questionary .container .help-us .title span { margin-right: 18px; }
-.questionary .container .help-us .desc { margin-left: 57px; }
-.questionary .container .help-us .desc p { font-family: "Roboto"; font-weight: 400; font-size: 18px; line-height: 1.4; margin-bottom: 22px; }
-.questionary .container .help-us .desc .buttons { display: flex; justify-content: space-between; align-items: center; }
-.questionary .container .help-us .desc .buttons a { text-decoration: none; color: #016726; }
-.questionary .container .help-us .desc .buttons .yes { font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; }
-.questionary .container .help-us .desc .buttons .next { font-family: "Roboto"; font-weight: 600; font-size: 14px; text-transform: uppercase; width: 170px; height: 46px; border-radius: 20px; display: flex; align-items: center; justify-content: center; background-color: #dddddd; transition: 0.3s linear; }
-.questionary .container .help-us .desc .buttons .next:hover { background-color: #016726; color: #ffffff; }
-.questionary .container .img { flex-basis: 50%; max-width: 50%; }
+.questionary .container { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; align-items: center; }
+.questionary .container .img { flex-basis: 70%; max-width: 70%; }
+.questionary .container .img img { width: 100%; }
 
 .also { background-color: #ffffff; padding-top: 30px; }
 .also .container { display: flex; justify-content: center; align-items: center; flex-direction: column; }
