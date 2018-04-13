@@ -133,7 +133,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .technology-section { margin-top: 0; }
 .technology-section .technology { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
-.technology-section .technology .description { flex-basis: 43%; max-width: 43%; font-family: "Roboto"; font-size: 18px; line-height: 1.3; padding-top: 27px; order: 1; }
+.technology-section .technology .description { flex-basis: 43%; max-width: 43%; font-family: "Roboto"; font-size: 18px; line-height: 1.3; padding-top: 0; order: 1; }
 .technology-section .technology .description .title { flex-basis: 100%; max-width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: flex-start; padding-left: 26px; padding-bottom: 5px; }
 .technology-section .technology .description .title span { margin-right: 20px; }
 .technology-section .technology .description .title h1 { font-family: "Roboto_Slab"; font-weight: 700; font-size: 24px; color: #016726; line-height: 1.4; }
@@ -163,7 +163,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .farmers .container .title { flex-basis: 100%; max-width: 100%; }
 .farmers .container .title h1 { font-size: 24px; }
 .farmers .container .count { font-size: 200px; letter-spacing: 5px; flex-basis: 50%; max-width: 50%; line-height: 1.3; }
-.farmers .container .count p { font-family: "Roboto"; font-weight: 400; color: #282828; font-size: 18px; letter-spacing: 1px; }
+.farmers .container .count p { font-family: "Roboto"; font-weight: 400; color: #282828; font-size: 18px; letter-spacing: 1px; margin-left: 135px; text-align: left; }
 .farmers .container .help-us { flex-basis: 45%; max-width: 45%; display: flex; flex-direction: column; align-items: flex-start; }
 .farmers .container .help-us .title { font-family: "Roboto_Slab"; font-weight: 700; color: #016726; display: flex; font-size: 24px; align-items: center; margin-bottom: 18px; }
 .farmers .container .help-us .title span { margin-right: 18px; }
