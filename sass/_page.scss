@@ -319,7 +319,11 @@
                         width: 28px;
                         height: 28px;
                         transition: 0.2s linear;
-                        margin-right: 23px;
+                        margin-right: 5px;
+
+                        @media (min-width: 480px) {
+                            margin-right: 23px;
+                        }
 
                         &:hover {
                             @include background('full-heart.png', auto);
@@ -334,19 +338,15 @@
                 }
 
                 .partner {
-                    display: none;
-
-                    @media (min-width: 480px) {
-                        display: block;
-                    }
 
                     .btn {
-                        font-size: 14px;
+                        font-size: 12px;
+                        width: 150px;
+                        height: 36px;
                         color: $white-color;
                         font-family: $roboto-font-family;
                         font-weight: $roboto-font-weight-bold;
-                        width: 220px;
-                        height: 46px;
+                        height: 36px;
                         border-radius: 20px;
                         background-color: $btn-color;
                         text-transform: uppercase;
@@ -357,6 +357,12 @@
                         align-items: center;
                         justify-content: center;
                         transition: 0.3s linear;
+
+                        @media (min-width: 480px) {
+                            font-size: 14px;
+                            width: 220px;
+                            height: 46px;
+                        }
 
 
                         &:hover {
@@ -565,8 +571,8 @@
 
 .page-section {
     .menu {
-        flex-basis: 64%;
-        max-width: 64%;
+        flex-basis: 68%;
+        max-width: 68%;
 
         @media (min-width: 480px) {
             flex-basis: 68%;
