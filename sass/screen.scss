@@ -152,6 +152,28 @@
         justify-content: space-between;
     }
 
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 28px;
+
+        li {
+            margin-right: 20px;
+
+            &:nth-of-type(1) {
+                img {
+                    max-height: 30px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                img {
+                    max-height: 21px;
+                }
+            }
+        }
+    }
+
     &__links-item {
         font-size: 14px;
         text-decoration: none;
@@ -953,7 +975,6 @@
                 transition: 0.3s linear;
 
                 &:hover {
-                    transform: scale(1.04);
                     box-shadow: none;
                 }
             }
