@@ -263,7 +263,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .technology-section .technology .options .likes .like span:hover { background-image: url("../img/full-heart.png"); background-size: auto; background-position: 0 0; background-repeat: no-repeat; }
 .technology-section .technology .options .likes .like p { font-family: "Roboto"; font-weight: 400; font-size: 18px; }
 .technology-section .technology .options .likes .partner .btn { font-size: 12px; width: 150px; height: 36px; color: #ffffff; font-family: "Roboto"; font-weight: 600; height: 36px; border-radius: 20px; background-color: #008731; text-transform: uppercase; border: none; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3) ; display: flex; text-decoration: none; align-items: center; justify-content: center; transition: 0.3s linear; }
-@media (min-width: 480px) { .technology-section .technology .options .likes .partner .btn { font-size: 14px; width: 220px; height: 46px; } }
+@media (min-width: 480px) { .technology-section .technology .options .likes .partner .btn { font-size: 14px; width: 220px; height: 46px; letter-spacing: 2px; } }
 .technology-section .technology .options .likes .partner .btn:hover { box-shadow: none; }
 
 .farmers { font-family: "Roboto_Slab"; font-weight: 700; color: #016726; margin-top: 90px; line-height: 1.4; margin-bottom: 0; }
